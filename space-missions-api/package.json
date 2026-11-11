@@ -1,0 +1,27 @@
+{
+  "name": "space-missions-api",
+  "version": "1.0.0",
+  "description": "Űrmisszió-nyilvántartó REST API (Express + MongoDB/Mongoose) unit tesztekkel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "jest --runInBand",
+    "test:coverage": "jest --runInBand --coverage"
+  },
+  "keywords": ["express", "mongodb", "mongoose", "rest-api", "jest"],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.2"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"],
+    "clearMocks": true
+  }
+}
